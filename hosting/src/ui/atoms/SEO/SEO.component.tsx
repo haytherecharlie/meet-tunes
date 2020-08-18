@@ -5,10 +5,10 @@ import { ga } from 'services/firebase'
 import { formatMessage } from 'ui/language/translations'
 
 const SEO = ({ page, crawl }) => {
-  const { origin = '<%site-url%>', pathname } = useLocation()
+  const { origin = 'meetunes.web.app', pathname } = useLocation()
 
   useEffect(() => {
-    if (origin === '<%site-url%>') ga().logEvent(`page_view`)
+    if (origin === 'meetunes.web.app') ga().logEvent(`page_view`)
   }, [])
 
   return (
@@ -20,29 +20,29 @@ const SEO = ({ page, crawl }) => {
       <title>{formatMessage(`${page}-seo-title`)}</title>
       <meta name="title" content={formatMessage(`${page}-seo-title`)} />
       <meta name="description" content={formatMessage(`${page}-seo-description`)} />
-      <link rel="canonical" href={`<%site-url%>${pathname}`} />
+      <link rel="canonical" href={`meetunes.web.app${pathname}`} />
       <meta name="robots" content={crawl ? 'index, follow' : 'noindex, follow'} />
       <meta
         name="keywords"
-        content="<%site-keywords%>"
+        content="Mee Tunes"
       />
-      <meta name="author" content="<%site-author%>" />
-      <meta name="publisher" content="<%site-author%>" />
+      <meta name="author" content="R Charles Hay" />
+      <meta name="publisher" content="R Charles Hay" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`<%site-url%>${pathname}`} />
+      <meta property="og:url" content={`meetunes.web.app${pathname}`} />
       <meta property="og:title" content={formatMessage(`${page}-seo-title`)} />
       <meta property="og:description" content={formatMessage(`${page}-seo-description`)} />
-      <meta property="og:image" content="<%site-url%>/social/og-image.jpg" />
+      <meta property="og:image" content="meetunes.web.app/social/og-image.jpg" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={`<%site-url%>${pathname}`} />
+      <meta property="twitter:url" content={`meetunes.web.app${pathname}`} />
       <meta property="twitter:title" content={formatMessage(`${page}-seo-title`)} />
       <meta property="twitter:description" content={formatMessage(`${page}-seo-description`)} />
-      <meta property="twitter:image" content={`<%site-url%>/social/og-image.jpg`} />
+      <meta property="twitter:image" content={`meetunes.web.app/social/og-image.jpg`} />
 
       {/* Favicons */}
       <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />

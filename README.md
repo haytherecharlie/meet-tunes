@@ -1,5 +1,5 @@
 ---
-# <%site-name%>
+# meetunes
 
 ---
 
@@ -14,10 +14,10 @@
 ## Getting Started:
 
 ### Replace Slugs
-* <%site-author%>
-* <%site-description%>
-* <%site-keywords%>
-* <%site-name%>
-* <%site-url%>
+* R Charles Hay
+* Play music while you wait on meet.
+* Mee Tunes
+* meetunes
+* meetunes.web.app
 * <%adsense-id%>
-* <%analytics-id%>
+* G-T561BGYW29

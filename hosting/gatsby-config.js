@@ -2,10 +2,10 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    siteUrl: '<%site-url%>',
-    title: `<%site-name%>`,
-    description: `<%site-description%>`,
-    author: `<%site-author%>`,
+    siteUrl: 'https://meetunes.web.app',
+    title: `meetunes`,
+    description: `Play music while you wait on meet.`,
+    author: `R Charles Hay`,
   },
   plugins: [
     `gatsby-plugin-root-import`,
@@ -20,12 +20,12 @@ module.exports = {
         path: `${__dirname}/gatsby-routes.js`
       }
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-1410569287706137`
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-adsense`,
+    //   options: {
+    //     publisherId: `ca-pub-1410569287706137`
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
@@ -94,8 +94,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: '<%site-url%>',
-        sitemap: '<%site-url%>/sitemap.xml',
+        host: 'meetunes.web.app',
+        sitemap: 'meetunes.web.app/sitemap.xml',
         policy: [
           {
             userAgent: '*',
@@ -108,7 +108,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: '<%analytics-id%>',
+        trackingId: 'G-T561BGYW29',
         head: true
       }
     }

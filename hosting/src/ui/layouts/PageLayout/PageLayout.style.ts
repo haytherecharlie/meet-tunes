@@ -10,7 +10,7 @@ export const PageLayout = styled('div')({
   flexDirection: 'column',
   alignItems: 'stretch',
   justifyContent: 'stretch',
-  background: theme.BACKGROUND_COLOR,
+  background: "#000",
   overflowX: 'hidden'
 })
 
