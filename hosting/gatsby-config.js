@@ -91,20 +91,20 @@ module.exports = {
         exclude: []
       }
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'meetunes.web.app',
-        sitemap: 'meetunes.web.app/sitemap.xml',
-        policy: [
-          {
-            userAgent: '*',
-            allow: '/',
-            disallow: []
-          }
-        ]
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     host: 'https://meetunes.web.app',
+    //     sitemap: 'https://meetunes.web.app/sitemap.xml',
+    //     policy: [
+    //       {
+    //         userAgent: '*',
+    //         allow: '/',
+    //         disallow: []
+    //       }
+    //     ]
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
