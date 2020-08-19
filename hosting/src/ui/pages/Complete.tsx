@@ -4,7 +4,7 @@ import songs from 'config/songs.json'
 import Text from 'ui/atoms/Text'
 import PageLayout from 'ui/layouts/PageLayout'
 
-const Home = ({ navigate }) => {
+const Home = () => {
   const [app, setApp] = useState({
     height: 0,
     width: 0,
@@ -41,31 +41,12 @@ const Home = ({ navigate }) => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center'
-        }}>
-        <div
-          style={{
-            padding: 50,
-            background: '#222',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-          <Text size="XL" text="Meeting starts in:" style={{ color: '#fff' }} bold unique />
-          <Text
-            size="XL"
-            text={<Countdown date={Date.now() + .5 * 60000} onComplete={() => navigate('/complete')} precision={0} />}
-            style={{ color: '#fff', fontSize: 40 }}
-            bold
-            unique
-          />
-        </div>
-      </div>
+        }}></div>
       <iframe
         style={{ overflow: 'hidden' }}
         width={app.width}
         height={app.height}
-        src={`https://www.youtube.com/embed/${app.song}?autoplay=1`}
+        src={`https://www.youtube.com/embed/Yd85ozj0p8o?autoplay=1`}
         frameBorder="0"
         allow="autoplay;"
         allowFullScreen></iframe>
